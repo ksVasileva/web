@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <hread>
+        <meta charset="utf-8">
+        <title>lab05_Vasilieva</title>
+    </hread>
+
+    <body>
+    	<a href="../static/form.html"> <h5><- Назад</h5></a></td>
+        <h1>LIST</h1>
+        <hr>
+        <form method="post" action="list">
+            Write the text: <input type="text" name="txt" vlaue="">
+            <input type="submit" value="Add">
+           
+            
+        </form> 
+        
+      
+        <ol>
+            {% for item in items %}
+            <form method="get" action="list">
+                <li><font color=" {{list1}}" >{{item}}</font></li> <input type="submit" value="delete">
+                <input type="hidden" value='{{item}}' name="Id">
+            </form>
+            {% endfor %}
+        </ol>
+    </body> 
+</html>

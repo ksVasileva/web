@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <hread>
+        <meta charset="utf-8">
+        <title>g12_lab04_Smirnov_M</title>
+    </hread>
+
+    <body>
+    	<a href="../static/form.html"> <h5><<= Назад</h5></a></td>
+        <h1>Лист</h1>
+        <hr>
+        <form method="post" action="list">
+            Введите текст: <input type="text" name="txt" vlaue="">
+            <input type="submit" value="Добавить">
+           
+            
+        </form> 
+        
+        <form method="post" action="lists3">
+                            <label for="sel32">Select:</label>
+                            <select id="sel32" name="list1">
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue" selected>Blue</option>
+                                <option value="yellow">Yellow</option>
+                            </select>
+                        </form>
+        <ol>
+            {% for item in items %}
+            <form method="get" action="list">
+                <li><font color=" {{list1}}" >{{item}}</font>'</li> <input type="submit" value="Удалить">
+                <input type="hidden" value='{{item}}' name="Id">
+            </form>
+            {% endfor %}
+        </ol>
+    </body> 
+</html>

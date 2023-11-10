@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>g12_Vasilieva_Ksenia_lab03</title>
+	</head>
+	<body>
+		<h1>Форма отправки запроса GET</h1>
+		<form method="get" action="/test">
+			Your name: <input type="text" name="param">
+			<input type="submit" value="send data">
+		</form>
+		<hr>
+		<h1>Форма отправки запроса POST</h1>     
+		<form method="post" action="/test">
+			Your name: <input type="text" name="param">
+			<input type="submit" value="send data">
+		</form>
+		<hr>/
+		<h1>Калькулятор</h1>
+		<form method="get" action="/calc">
+			number 1: <input type="text" name="paramA">
+			number 2: <input type="text" name="paramB">
+			<br>
+			<br>
+			<input type="submit" name="operation" value="Прибавить">
+			<input type="submit" name="operation" value="Вычесть">
+			<input type="submit" name="operation" value="Умножить">
+			<input type="submit" name="operation" value="Разделить">
+		</form>
+	</body>
+</html>	

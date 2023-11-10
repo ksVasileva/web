@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <hread>
+        <meta charset="utf-8">
+        <title>g12_lab04_Smirnov_M</title>
+    </hread>
+
+    <body>
+    	<h3>Узнать время</h3>
+        <form method="get" action="/">
+            Введите имя: <input type="text" name="param"/>
+            <input type="submit" value="Далее =>>">
+        </form>
+        <hr>
+        <form method="get" action="../lists3">
+                            <label for="sel31">Select:</label>
+                            <select id="sel31" name="list1">
+                                <option value="red">Red</option>
+                                <option value="green">Green</option>
+                                <option value="blue">Blue</option>
+                                <option value="yellow" selected>Yellow</option>
+                            </select>
+							<br>
+                        </form>
+        <a href="/list"> <h3>Лист</h3></a></td>
+    </body> 
+</html>

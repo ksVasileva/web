@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Uploader</title>
+	<style>
+        body {
+            background-color: #6A5ACD;
+        }
+    </style>
+</head>
+<body>
+	<h1>lab_07</h1>
+	<hr color="black">
+	<br>
+	<form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <input type="submit" value="Загрузить изображение">
+    </form>
+	<br>
+	<hr color="black">
+    <table bgcolor = "#6600FF" border="1">
+        {% for img in images %}
+            
+                <td style="width: 250px; height: 400px;">
+					<center>
+					<img src="{{ url_for('static', filename='unloader/' + img) }}" width="250">
+					<br><br>
+					{{ img }}<br><br>
+				
+					{% if img == 'andromeda.png' %}
+						Значение/мифология: Греческая принцесса<br>
+						Самая яркая звезда: Alpheratz<br>
+						Первое появление: Древнее<br>
+						Площадь неба: 1,8%<br>
+						Месяц: Сентябрь
+					{% elif img == 'antlia.png' %}
+						Значение/мифология: Воздушный насос<br>
+						Самая яркая звезда: а-Ant<br>
+						Первое появление: 1756 г.<br>
+						Площадь неба: 0,6%<br>
+						Месяц: Февраль
+					{% elif img == 'apus.png' %}
+						Значение/мифология: Райская птица<br>
+						Самая яркая звезда: a-Aps<br>
+						Первое появление: 1598 г.<br>
+						Площадь неба: 0,5%<br>
+						Месяц: -
+					{% elif img == 'aries.png' %}
+						Значение/мифология: Баран, чье золотое руно было найдено Ясоном<br>
+						Самая яркая звезда: Альферац<br>
+						Первое появление: Древнее<br>
+						Площадь неба: 1,1%<br>
+						Месяц: Октябрь
+					{% elif img == 'centaurus.png' %}
+						Значение/мифология: Мудрый кентавр<br>
+						Самая яркая звезда: Rigil-Kentaurus<br>
+						Первое появление: Древнее<br>
+						Площадь неба: 2,6%<br>
+						Месяц: Март
+					{% elif img == 'leo.png' %}
+						Значение/мифология: Лев Немейский убитый Гераклом<br>
+						Самая яркая звезда: Regulus<br>
+						Первое появление: Древнее<br>
+						Площадь неба: 2,3%<br>
+						Месяц: Февраль
+					{% elif img == 'pisces.png' %}
+						Значение/мифология: Две рыбы плывущие напротив друг друга<br>
+						Самая яркая звезда: n-Psc<br>
+						Первое появление: Древнее<br>
+						Площадь неба: 2,2%<br>
+						Месяц: Сентябрь
+					{% elif img == 'scorpius.png' %}
+						Значение/мифология: Скорпион, убийца Ориона<br>
+						Самая яркая звезда: Antares<br>
+						Первое появление: Древнее<br>
+						Площадь неба: 1,2%<br>
+						Месяц: Май
+					{% endif %}
+					
+					<br><br>
+					<form action="/delete/{{ img }}" method="POST">
+							<input type="submit" value="Удалить">
+						</form>
+				</center></td>
+            
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>lab06_g12_Vasilieva_Ksenia</title>
+    </head>
+
+    <body>
+        <h1>Планеты солнечной системы</h1>
+		<br>
+        <hr>
+        <a href="sun.html"> <img src="star-sun-256px.png" width="100px" height="100px"> </img> </a>
+		<font size=5 > Солнце</font>
+        <hr>
+		
+        <a href="mercury.html"> <img src="planet-mercury-256px.png" width="100px" height="100px"> </img> </a>
+		<font size=5> Меркурий</font>
+        <hr>
+		
+        <a href="venus.html"> <img src="planet-venus-256px.png" width="100px" height="100px"> </img> </a>
+		<font size=5> Венера</font>		
+        <hr>
+		
+        <a href="earth.html"> <img src="planet-earth-256px.png" width="100px" height="100px"> </img> </a>
+        <font size=5> Земля</font>
+		<hr>
+		
+        <a href="mars.html"> <img src="planet-mars-256px.png" width="100px" height="100px"> </img> </a>
+        <font size=5> Марс</font>
+		<hr>
+		
+        <a href="jupiter.html"> <img src="planet-jupiter-256px.png" width="100px" height="100px"> </img> </a>
+        <font size=5> Юпитер</font>
+		<hr>
+		
+        <a href="saturn.html"> <img src="planet-saturn-256px.png" width="100px" height="100px"> </img> </a>
+        
+		<font size=5> Сатурн</font>
+		<hr>
+		
+        <a href="uranus.html"> <img src="planet-uranus-256px.png" width="100px" height="100px"> </img> </a>
+        <font size=5> Уран</font>
+		<hr>
+		
+        <a href="neptune.html"> <img src="planet-neptune-256px.png" width="100px" height="100px"> </img> </a>
+        <font size=5> Нептун</font>
+		<hr>
+	</body> 
+</html>

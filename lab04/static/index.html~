@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <hread>
+        <meta charset="utf-8">
+        <title>lab04_Vasilieva_Ksenia</title>
+    </hread>
+
+    <body>
+        <h1>Lab04 by Vasilieva Ksenia</h1>
+        <hr>
+        <center>
+            <table border="1">
+                <tr>
+                    <th>GET</th>
+                    <th>POST</th>
+                </tr>
+
+                <tr>
+                    <th colspan="2">Checkbox</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <form method="get" action="../checkboxes">
+                            <input type="checkbox" id="o_check1" name="opt1" checked><label for="o_check1">option 1</label>
+                            <br>
+                            <input type="checkbox" id="o_check2" name="opt2"><label for="o_check2">option 2</label>
+                            <br>
+                            <input type="submit" value="click me, please">
+                        </form>
+                    </td>
+                    <td>
+                        <form method="post" action="../checkboxes">
+                            <input type="checkbox" id="check1" name="opt1" checked><label for="check1">option 1</label>
+                            <br>
+                            <input type="checkbox" id="check2" name="opt2"><label for="check2">option 2</label>
+                            <br>
+                            <input type="submit" value="click me, please">
+                        </form>
+                    </td>
+                </tr> 
+
+                <tr>
+                    <th colspan="2">Radiobutton</th>
+                </tr>
+                
+                <tr>
+                    <td>
+                        <form method="get" action="../radiobuttons">
+                            group 1 <br>
+                            <input type="radio" id="o_radio1" name="grp1" value="one"><label for="o_radio1">option 1</label>
+                            <br>
+                            <input type="radio" id="o_radio2" name="grp1" value="two"><label for="o_radio2">option 2</label>
+                            <br>
+                            group 2 <br>
+                            <input type="radio" id="o_radiob1" name="grp2" value="one1"><label for="o_radiob1">option 1</label>
+                            <br>
+                            <input type="radio" id="o_radiob2" name="grp2" value="two1"><label for="o_radiob2">option 2</label>
+                            <br>
+                            group 3 <br>
+                            <input type="radio" id="o_radiobu1" name="grp3" value="red"><label for="o_radiobu1">red</label>
+                            <br>
+                            <input type="radio" id="o_radiobu2" name="grp3" value="green"><label for="o_radiobu2">green</label>
+                            <br>
+                            <input type="radio" id="o_radiobu3" name="grp3" value="blue"><label for="oradiobu3">blue</label>
+                            <br>
+                            <input type="submit" value="click me, please">
+                        </form>
+                    </td>
+                    <td>
+                        <form method="post" action="../radiobuttons">
+                            group 1 <br>
+                            <input type="radio" id="radio1" name="grp1"><label for="radio1">option 1</label>
+                            <br>
+                            <input type="radio" id="radio2" name="grp1"><label for="radio2">option 2</label>
+                            <br>
+                            group 2 <br>
+                            <input type="radio" id="radiob1" name="grp2"><label for="radiob1">option 1</label>
+                            <br>
+                            <input type="radio" id="radiob2" name="grp2"><label for="radiob2">option 2</label>
+                            <br>
+                            group 3 <br>
+                            <input type="radio" id="radiobu1" name="grp3" value="red"><label for="radiobu1">red</label>
+                            <br>
+                            <input type="radio" id="radiobu2" name="grp3" value="green"><label for="radiobu2">green</label>
+                            <br>
+                            <input type="radio" id="radiobu3" name="grp3" value="blue"><label for="radiobu3">blue</label>
+                            <br>
+                            <input type="submit" value="click me, please">
+                        </form>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <th colspan="2">Lists</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <form method="get" action="../lists1">
+                            <label for="sel11">Select:</label>
+                            <select id="sel11" name="list1">
+                                <option value="First">First</option>
+                                <option value="Second">Second</option>
+                            </select>
+                            <input type="submit" value="click me, please">
+                            <br>
+                        </form>
+                        <form method="get" action="../lists2">
+                            <label for="sel21">Select:</label>
+                            <select id="sel21" name='list2'>
+                                <option value="First">First</option>
+                                <option value="First1">First</option>
+                                <option value="Default" selected>Default</option>
+                            </select>
+                            <input type="submit" value="click me, please">
+                        </form>
+                        <form method="get" action="../lists3">
+                            <label for="sel31">Select:</label>
+                            <select id="sel31" name="list3">
+                                <option value="LightCoral">LightCoral><option>
+                                <option value="Pink">Pink</option>
+                                <option value="Magenta">Magenta</option>
+                            </select>
+                            <input type="submit" value="click me, please">
+                            <br>
+                        </form>
+                    </td>
+                    <td>
+                        <form method="post" action="../lists1">
+                            <label for="sel12">Select:</label>
+                            <select id="sel12" name="list1">
+                                <option value="First">First</option>
+                                <option value="Second">Second</option>
+                            </select>
+                            <input type="submit" value="click me, please">
+                            <br>
+                        </form>
+                        <form method="post" action="../lists2">
+                            <label for="sel22">Select:</label>
+                            <select id="sel22" name='list2'>
+                                <option value="First">First</option>
+                                <option value="First1">First</option>
+                                <option value="Default" selected>Default</option>
+                            </select>
+                            <input type="submit" value="click me, please">
+                        </form>
+                        <form method="post" action="../lists3">
+                            <label for="sel32">Select:</label>
+                            <select id="sel32" name="list3">
+                                <option value="LightCoral">LightCoral><option>
+                                <option value="Pink">Pink</option>
+                                <option value="Magenta">Magenta</option>
+                            </select>
+                            <input type="submit" value="click me, please">
+                            <br>
+                        </form>
+                    </td>
+                </tr> 
+
+
+            </table>
+        </center>
+    </body> 
+</html>

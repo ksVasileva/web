@@ -1,0 +1,51 @@
+
+from flask import Flask, request 
+
+app = Flask('lab03')
+
+@app.route('/test', methods=['GET', 'POST'])
+def my_form():
+	if request.method == "GET":
+		abc = request.args.get('param')
+	else:
+		abc = request.form.get('param')
+	return "привет, " + abc + "!"
+	
+	
+	
+@app.route('/calc')	
+def my_form1():
+	a = request.args.get('paramA')
+	b = request.args.get('paramB')
+	n = request.args.get('operation')
+	g = ''
+	if n == "Прибавить":
+	    c = int(a) + int(b)
+	    g = str(a) + "+" + str(b) + "=" + str(c)
+	if n == "Вычесть":            
+	    c = int(a) - int(b)
+	    g = str(a) + "-" + str(b) + "=" + str(c)
+	if n == "Умножить":            
+	    c = int(a)*int(b)
+	    g = str(a) + "*" + str(b) + "=" + str(c)
+	    else:            
+	    c = int(a)/int(b)
+	    g = str(a) + "/" + str(b) + "=" + str(c)
+	    
+	    
+    doc = ''
+	doc = '!doctype html>'
+    doc = '<html lang="ru">'
+	doc = '		<head>'
+	doc = '			<meta charset="utf-8">'
+	doc = '			<title>g12_Vasilieva_Ksenia_lab03</title>'
+	doc = '		</head>'
+	doc = '		<body>'
+	doc = '			<hr>'
+	doc = '			<h1>Ваш ответ:>'
+	doc = '			Ответ' +g
+	doc = '		</body>'
+	doc = '<html>'
+    return doc
+	             
+

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <hread>
+        <meta charset="utf-8">
+        <title>lab03Kuvshinov</title>
+    </hread>
+
+    <body>
+        Пртвет {{name}} , сейчас {{time}} 
+    </body> 
+</html>

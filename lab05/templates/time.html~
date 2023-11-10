@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <hread>
+        <meta charset="utf-8" http-equiv="refresh" content="1">
+        <title>lab05_Vasilieva</title>
+    </hread>
+
+    <body>
+    	<a href="../static/form.html"> <h5><<= Back</h5></a></td>
+    	<hr>
+        Hi {{name}} , now {{times}} 
+    </body> 
+</html>

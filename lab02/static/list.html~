@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+      <head>
+           <meta charset="utf-8">
+           <title>this is page title</title>
+      </head>
+      <body>
+          <a href="index.html">goto main page</a>
+          <a href="page.html">goto page</a>
+          <a href="table.html">goto table page</a>
+          <h1>Lists</h1>
+          <hr>
+          <h3>g12_vasilieva lab02</h3>
+          <hr>
+           <ol>
+              <li>first element</li>
+              <li>second elemen</li>
+              <ol type="a">
+                  <li>sublist first element</li>
+                  <li>sublist second element</li>
+              </ol>
+              <li> third element</li>
+           </ol>
+           <hr>
+           
+           <ol type="a">
+              <li>first element</li>
+              <li>second element</li>
+              <li>third element</li>
+           </ol>
+           <hr>
+           <ol type="A">
+              <li>first elemen</li>
+              <li>second elemen</li>
+              <li>third element</li>
+           </ol>
+           <hr>
+           <ol type="I">
+              <li>first elemen</li>
+              <li>second elemen</li>
+              <li>third element</li>
+           </ol>
+           <hr>
+           <ol type="i">
+              <li>first element</li>
+              <li>second elemen</li>
+              <li>third element</li>
+           </ol>
+           <hr>
+           <ul type="circle">
+              <li>first element</li>
+              <li>second elemen</li>
+              <li>third element</li>
+           </ul>
+           <hr>
+           <ul type="disk">
+              <li>first element</li>
+              <li>second elemen</li>
+              <li>third element</li>
+           </ul>
+           <hr>
+           <ul type="square">
+              <li>first element</li>
+              <li>second element</li>
+              <li>third element</li>
+           </ul>
+           <hr>
+           
+              <ol>
+              <li>first element</li>
+              <li>second element</li>
+              <ol type="A" start="3" >
+                  <li>sublist first element</li>
+                  <ul type="square">
+                    <li>first elemen</li>
+                    <li>second elemen</li>
+                    <li>third element</li>
+                    <li>fourth element</li>
+                    <li>fifth element</li>
+                    <li>sixth element</li>
+                  </ul>
+                  <li>sublist second element</li>
+                  <li>sublist third element</li>
+              </ol>
+              <li> third element</li>
+           </ol>
+           <hr>
+                
+      </body>
+</html>              
+                  
